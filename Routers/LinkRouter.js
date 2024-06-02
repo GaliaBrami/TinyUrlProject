@@ -9,5 +9,4 @@ LinksRouter.post("/", LinksController.add);
 LinksRouter.put("/:id", LinksController.update);
 LinksRouter.delete("/:id", LinksController.delete);
 
-
 export default LinksRouter;

@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
 
-// יצירת הסכמה של המשימה (Task)
 const UserSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -21,8 +20,7 @@ const UserSchema = new mongoose.Schema({
     links: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Link'
-    }], // שימוש ב-ObjectId להפניה לקישורים
+    }], 
 });
 
-// יצוא המודל
 export default mongoose.model("users", UserSchema);
